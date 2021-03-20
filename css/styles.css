@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans";
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding-bottom: 20px;
+  }
+  
+  @font-face {
+    font-family: GillSans;
+    src: url(fonts/GillSans.otf);
+  }
+  .nav {
+    width: 980px;
+    height: 60px;
+    border-bottom: black solid 3px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .nav .logo {
+    width: 92px;
+    height: 42px;
+    align-self: center;
+  }
+  .nav .links {
+    width: 400px;
+    height: 42px;
+    font-family: "GillSans";
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .links div.pipe {
+    color: #79ADDC;
+    font-size: 20px;
+  }
+  .nav .links div a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    text-transform: lowercase;
+  }
+  
+  @media only screen and (max-width: 1060px) {
+    .nav {
+      max-width: 980px;
+      height: 60px;
+      border-bottom: black solid 3px;
+      margin: 20px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .nav .logo {
+      width: 92px;
+      height: 42px;
+      align-self: center;
+    }
+  
+    .nav .links {
+      width: 400px;
+      height: 42px;
+      font-family: GillSans;
+      align-self: center;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav .links div.pipe {
+      color: #79ADDC;
+      font-size: 20px;
+    }
+  
+    .nav .links div a {
+      font-family: "GillSans";
+      font-size: 15px;
+      text-decoration: none;
+      color: black;
+      margin: 0 auto;
+      text-transform: lowercase;
+    }
+  }
+  footer {
+    max-width: 1280px;
+    height: 100px;
+    background-color: #79ADDC;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    margin-top: 285px;
+    margin-bottom: 0px;
+  }
+  footer .logo {
+    width: 92px;
+    height: 42px;
+    align-self: center;
+  }
+  footer .copyright {
+    font-size: 12px;
+    align-self: center;
+    color: #fff;
+  }
+  footer .socialmedia {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 1060px) {
+    footer {
+      max-width: 100%;
+      height: 100px;
+      background-color: #79ADDC;
+      background-size: cover;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 120px;
+    }
+  
+    footer .logo {
+      width: 92px;
+      height: 42px;
+      align-self: center;
+    }
+  
+    footer .copyright {
+      font-size: 12px;
+      align-self: center;
+      color: #fff;
+    }
+  
+    footer .socialmedia {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      color: #fff;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans";
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding-bottom: 20px;
+  }
+  
+  @font-face {
+    font-family: GillSans;
+    src: url(fonts/GillSans.otf);
+  }
+  .about {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .about .about-top-section {
+    margin-top: 100px;
+    padding-bottom: 5px;
+  }
+  .about .about-top-section .about-title {
+    border-bottom: black solid 3px;
+    width: 100px;
+    padding-bottom: 20px;
+  }
+  .about .about-bottom-section {
+    margin-top: 100px;
+  }
+  .about .about-bottom-section h3 {
+    flex-direction: row;
+    border-bottom: black solid 3px;
+    width: 80px;
+  }
+  .about .about-bottom-section .client {
+    max-width: 676px;
+    min-height: 150px;
+    display: flex;
+    margin-bottom: 38px;
+  }
+  .about .about-bottom-section .client .client-image {
+    width: 260px;
+    height: 150px;
+  }
+  .about .about-bottom-section .client .client-image img {
+    height: 100%;
+  }
+  .about .about-bottom-section .client .client1 {
+    background-image: url(../images/about-client-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about .about-bottom-section .client .client2 {
+    background-image: url(../images/about-client-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about .about-bottom-section .client .client-quote {
+    position: relative;
+    min-height: 50px;
+    width: 100%;
+    padding-left: 25px;
+    flex-direction: row;
+  }
+  .about .about-bottom-section .client .client-quote p:last-of-type {
+    color: black;
+    margin-bottom: 25px;
+  }
+  .about .about-bottom-section .client .client-quote p:last-of-type:last-child {
+    color: gray;
+  }
+  .about .about-bottom-section .client .client-quote .client-name {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #79ADDC;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about .about-bottom-section {
+      padding: 10px;
+    }
+  }
+  

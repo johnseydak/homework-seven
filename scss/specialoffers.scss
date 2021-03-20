@@ -1,3 +1,42 @@
-.specialoffers {
-    
+.specialoffers{
+    font-family: Proxima;
+    width: 980px;
+    margin: auto;
+    display: flex;
+    //padding-top: 80px;
+    background-image: $overlay, url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+
+
+
+    .headline{
+        padding-left: 0px;
+        font-size: 60px;
+    }
+
+    .offers{
+
+
+        .offer1{
+        background-image: $overlay, url(../images/special-offer-01.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+
+
+        }
+
+        .offer2{
+        background-image: $overlay, url(../images/special-offer-02.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        }
+
+    }
 }

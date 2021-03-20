@@ -21,21 +21,33 @@
 
 
         .offer1{
-        background-image: $overlay, url(../images/special-offer-01.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
 
+            .barcelonaimage {
+                background-image: $overlay, url(../images/special-offer-01.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                //margin: 0 auto;
+            }
+            .barcelonasection {
+                font-size: 12px;
+                padding-left: 10px;
+            }
 
         }
 
         .offer2{
-        background-image: $overlay, url(../images/special-offer-02.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0 auto;
+
+            .bangkokimage {
+                background-image: $overlay, url(../images/special-offer-02.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .bangkoksection{
+                font-size: 12px;
+                padding-left: 10px;
+            }            
         }
 
     }

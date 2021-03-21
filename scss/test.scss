@@ -1,0 +1,52 @@
+.specialoffers{
+    font-family: Proxima;
+    width: 980px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    margin: 0 auto;
+    background-color: red; // This is a pretty good indicator that the CSS isn't updating
+
+
+
+    .headline{
+        padding-left: 0px;
+        font-size: 60px;
+    }
+
+    .offers{
+
+
+        .offer1{
+            flex-direction: row;
+
+            .barcelonaimage{
+                background-image: $overlay, url(../images/special-offer-01.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .barcelonasection{
+                font-size: 12px;
+                padding-left: 10px;
+            }
+
+        }
+
+        .offer2{
+            flex-direction: row;
+
+            .bangkokimage{
+                background-image: $overlay, url(../images/special-offer-02.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .bangkoksection{
+                font-size: 12px;
+                padding-left: 10px;
+            }            
+        }
+
+    }
+}

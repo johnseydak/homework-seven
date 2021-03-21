@@ -1,104 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Gill Sans";
-  }
-  
-  html, body {
-    height: 100%;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    padding-bottom: 20px;
-  }
-  
-  @font-face {
-    font-family: GillSans;
-    src: url(fonts/GillSans.otf);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans";
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-bottom: 20px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(fonts/GillSans.otf);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(fonts/Proxima_Nova_ScOsf_Extra_Condensed_Bold.otf);
+}
+.nav {
+  width: 980px;
+  height: 60px;
+  border-bottom: black solid 3px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav .logo {
+  width: 92px;
+  height: 42px;
+  align-self: center;
+}
+.nav .links {
+  width: 400px;
+  height: 42px;
+  font-family: "GillSans";
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .links div.pipe {
+  color: #79ADDC;
+  font-size: 20px;
+}
+.nav .links div a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  text-transform: lowercase;
+}
+
+@media only screen and (max-width: 1060px) {
   .nav {
-    width: 980px;
+    max-width: 980px;
     height: 60px;
     border-bottom: black solid 3px;
     margin: 20px auto 0 auto;
     display: flex;
     justify-content: space-between;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   .nav .logo {
     width: 92px;
     height: 42px;
     align-self: center;
   }
+
   .nav .links {
     width: 400px;
     height: 42px;
-    font-family: "GillSans";
+    font-family: GillSans;
     align-self: center;
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .nav .links div.pipe {
     color: #79ADDC;
     font-size: 20px;
   }
+
   .nav .links div a {
+    font-family: "GillSans";
     font-size: 15px;
     text-decoration: none;
     color: black;
-    margin: auto;
+    margin: 0 auto;
     text-transform: lowercase;
   }
-  
-  @media only screen and (max-width: 1060px) {
-    .nav {
-      max-width: 980px;
-      height: 60px;
-      border-bottom: black solid 3px;
-      margin: 20px auto 0 auto;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .nav .logo {
-      width: 92px;
-      height: 42px;
-      align-self: center;
-    }
-  
-    .nav .links {
-      width: 400px;
-      height: 42px;
-      font-family: GillSans;
-      align-self: center;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .nav .links div.pipe {
-      color: #79ADDC;
-      font-size: 20px;
-    }
-  
-    .nav .links div a {
-      font-family: "GillSans";
-      font-size: 15px;
-      text-decoration: none;
-      color: black;
-      margin: 0 auto;
-      text-transform: lowercase;
-    }
-  }
+}
+footer {
+  max-width: 1280px;
+  height: 100px;
+  background-color: #79ADDC;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px;
+  margin-top: 285px;
+  margin-bottom: 0px;
+}
+footer .logo {
+  width: 92px;
+  height: 42px;
+  align-self: center;
+}
+footer .copyright {
+  font-size: 12px;
+  align-self: center;
+  color: #fff;
+}
+footer .socialmedia {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1060px) {
   footer {
-    max-width: 1280px;
+    max-width: 100%;
     height: 100px;
     background-color: #79ADDC;
     background-size: cover;
@@ -106,152 +140,445 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 120px;
-    margin-top: 285px;
-    margin-bottom: 0px;
   }
+
   footer .logo {
     width: 92px;
     height: 42px;
     align-self: center;
   }
+
   footer .copyright {
     font-size: 12px;
     align-self: center;
     color: #fff;
   }
+
   footer .socialmedia {
     display: flex;
     justify-content: space-between;
     align-self: center;
     color: #fff;
   }
-  
-  @media only screen and (max-width: 1060px) {
-    footer {
-      max-width: 100%;
-      height: 100px;
-      background-color: #79ADDC;
-      background-size: cover;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 120px;
-    }
-  
-    footer .logo {
-      width: 92px;
-      height: 42px;
-      align-self: center;
-    }
-  
-    footer .copyright {
-      font-size: 12px;
-      align-self: center;
-      color: #fff;
-    }
-  
-    footer .socialmedia {
-      display: flex;
-      justify-content: space-between;
-      align-self: center;
-      color: #fff;
-    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans";
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-bottom: 20px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(fonts/GillSans.otf);
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.about .about-top-section {
+  margin-top: 100px;
+  padding-bottom: 5px;
+}
+.about .about-top-section .about-title {
+  border-bottom: black solid 3px;
+  width: 100px;
+  padding-bottom: 20px;
+}
+.about .about-bottom-section {
+  margin-top: 100px;
+}
+.about .about-bottom-section h3 {
+  flex-direction: row;
+  border-bottom: black solid 3px;
+  width: 80px;
+}
+.about .about-bottom-section .client {
+  max-width: 676px;
+  min-height: 150px;
+  display: flex;
+  margin-bottom: 38px;
+}
+.about .about-bottom-section .client .client-image {
+  width: 260px;
+  height: 150px;
+}
+.about .about-bottom-section .client .client-image img {
+  height: 100%;
+}
+.about .about-bottom-section .client .client1 {
+  background-image: url(../images/about-client-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-bottom-section .client .client2 {
+  background-image: url(../images/about-client-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-bottom-section .client .client-quote {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+  flex-direction: row;
+}
+.about .about-bottom-section .client .client-quote p:last-of-type {
+  color: black;
+  margin-bottom: 25px;
+}
+.about .about-bottom-section .client .client-quote p:last-of-type:last-child {
+  color: gray;
+}
+.about .about-bottom-section .client .client-quote .client-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #79ADDC;
+}
+
+@media only screen and (max-width: 600px) {
+  .about .about-bottom-section {
+    padding: 10px;
   }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Gill Sans";
+}
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+  background-color: bisque;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30 px;
+}
+.promo-tours .promo .header {
+  font-family: GillSans;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.promo-tours .promo .price {
+  margin-bottom: 70px;
+}
+.promo-tours .promo .learn-more {
+  background-color: #79ADDC;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.promo-tours .israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+}
+.promo-tours .usa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+}
+.promo-tours .austrailia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
   }
-  
-  html, body {
-    height: 100%;
+  .promo-tours .promo {
+    margin-bottom: 30px;
   }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    padding-bottom: 20px;
-  }
-  
-  @font-face {
-    font-family: GillSans;
-    src: url(fonts/GillSans.otf);
-  }
-  .about {
-    max-width: 980px;
+}
+.booking-form {
+  max-width: 900px;
+  height: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto -100px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.booking-form .break {
+  flex-basis: 100%;
+  height: 0;
+}
+.booking-form .h1 {
+  width: 100%;
+  font-size: 50px;
+}
+.booking-form .col1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+}
+.booking-form .col1 .name {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  height: 45px;
+  width: 400px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .col1 .country {
+  margin-bottom: 10px;
+  margin-right: 20px;
+  height: 45px;
+  width: 400px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .col1 .check-in {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .col1 .check-out {
+  margin-bottom: 10px;
+  margin-left: 100px;
+  width: 100%;
+  height: 45px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .col2 {
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  max-width: 900px;
+  margin-bottom: 10px;
+}
+.booking-form .col2 .email {
+  width: 480px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .col2 .hotel {
+  width: 480px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: auto;
+}
+.booking-form .people .adult {
+  height: 45px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .people .children {
+  height: 45px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .people .rooms {
+  height: 45px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+}
+.booking-form .message {
+  height: 200px;
+  width: 100%;
+  height: 200px;
+  margin: 40 auto;
+  padding: 10px 30px;
+  border: #79ADDC solid 1px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1060px) {
+  .booking-form {
+    width: 80%;
+    flex-direction: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 0 auto;
   }
-  .about .about-top-section {
-    margin-top: 100px;
-    padding-bottom: 5px;
+  .booking-form .h1 {
+    width: 80%;
+    margin: 0 auto;
+    width: 400px;
   }
-  .about .about-top-section .about-title {
-    border-bottom: black solid 3px;
-    width: 100px;
-    padding-bottom: 20px;
+  .booking-form .col1 {
+    margin: 0 auto;
+    width: 80%;
+    width: 400px;
   }
-  .about .about-bottom-section {
-    margin-top: 100px;
+  .booking-form .col1 .check-in {
+    margin-left: 0px;
+    width: 400px;
   }
-  .about .about-bottom-section h3 {
-    flex-direction: row;
-    border-bottom: black solid 3px;
-    width: 80px;
+  .booking-form .col1 .check-out {
+    margin-left: 0px;
+    padding-bottom: 30px;
+    width: 400px;
   }
-  .about .about-bottom-section .client {
-    max-width: 676px;
-    min-height: 150px;
-    display: flex;
-    margin-bottom: 38px;
+  .booking-form .col2 {
+    width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
   }
-  .about .about-bottom-section .client .client-image {
-    width: 260px;
-    height: 150px;
+  .booking-form .col2 .email {
+    width: 400px;
   }
-  .about .about-bottom-section .client .client-image img {
-    height: 100%;
+  .booking-form .col2 .hotel {
+    width: 400px;
   }
-  .about .about-bottom-section .client .client1 {
-    background-image: url(../images/about-client-01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .booking-form .people {
+    width: 80%;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 40px;
   }
-  .about .about-bottom-section .client .client2 {
-    background-image: url(../images/about-client-02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .about .about-bottom-section .client .client-quote {
-    position: relative;
-    min-height: 50px;
+  .booking-form .message {
     width: 100%;
-    padding-left: 25px;
-    flex-direction: row;
   }
-  .about .about-bottom-section .client .client-quote p:last-of-type {
-    color: black;
-    margin-bottom: 25px;
-  }
-  .about .about-bottom-section .client .client-quote p:last-of-type:last-child {
-    color: gray;
-  }
-  .about .about-bottom-section .client .client-quote .client-name {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: #79ADDC;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .about .about-bottom-section {
-      padding: 10px;
-    }
-  }
-  
+}
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.hero .bannertext {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding-top: 80px;
+}
+.hero .lorem {
+  text-align: center;
+  color: white;
+}
+.hero .readmore {
+  background-color: #79ADDC;
+  padding: 15px 30px;
+  width: 150px;
+  text-align: center;
+  left: 565px;
+  top: 50px;
+  color: white;
+  margin: 0 auto;
+}
+
+.specialoffers {
+  font-family: Proxima;
+  width: 980px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  margin: 0 auto;
+  background-color: red;
+}
+.specialoffers .headline {
+  padding-left: 0px;
+  font-size: 60px;
+}
+.specialoffers .offers .offer1 {
+  flex-direction: row;
+}
+.specialoffers .offers .offer1 .barcelonaimage {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/special-offer-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.specialoffers .offers .offer1 .barcelonasection {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.specialoffers .offers .offer2 {
+  flex-direction: row;
+}
+.specialoffers .offers .offer2 .bangkokimage {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/special-offer-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.specialoffers .offers .offer2 .bangkoksection {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.specialoffers {
+  font-family: Proxima;
+  width: 980px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  margin: 0 auto;
+  background-color: red;
+}
+.specialoffers .headline {
+  padding-left: 0px;
+  font-size: 60px;
+}
+.specialoffers .offers .offer1 {
+  flex-direction: row;
+}
+.specialoffers .offers .offer1 .barcelonaimage {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/special-offer-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.specialoffers .offers .offer1 .barcelonasection {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.specialoffers .offers .offer2 {
+  flex-direction: row;
+}
+.specialoffers .offers .offer2 .bangkokimage {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/special-offer-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.specialoffers .offers .offer2 .bangkoksection {
+  font-size: 12px;
+  padding-left: 10px;
+}

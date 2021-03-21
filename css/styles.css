@@ -110,7 +110,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0px 120px;
-  margin-top: 285px;
+  margin-top: 130px;
   margin-bottom: 0px;
 }
 footer .logo {
@@ -141,6 +141,7 @@ footer .socialmedia {
     display: flex;
     justify-content: space-between;
     padding: 0px 120px;
+    margin-top: 130px;
   }
 
   footer .logo {
@@ -555,7 +556,7 @@ p {
   margin: auto;
   display: block;
   margin: 0 auto;
-  background-color: grey;
+  background-color: white;
 }
 .specialoffers .headline {
   padding-top: 50px;
@@ -563,7 +564,6 @@ p {
   width: 980px;
   height: 110px;
   flex-direction: row;
-  background-color: aqua;
   display: block;
 }
 .specialoffers .headline .headlineborder {
@@ -572,7 +572,7 @@ p {
   border-bottom: 3px solid black;
 }
 .specialoffers .offers {
-  background-color: bisque;
+  background-color: white;
 }
 .specialoffers .offers .offer1 {
   display: flex;
@@ -687,7 +687,7 @@ p {
   width: 135px;
   color: white;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 .specialoffers .offers .offer2 .bangkoksection2 {
   width: 400px;
@@ -696,4 +696,19 @@ p {
   font-size: 25px;
   color: orangered;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 1060px) {
+  .specialoffers {
+    max-width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .specialoffers .headline {
+    align-items: center;
+    min-width: 100%;
+  }
+  .specialoffers .offers {
+    flex-direction: column;
+  }
 }

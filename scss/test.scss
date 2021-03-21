@@ -5,7 +5,7 @@
     margin: auto;
     display: block;
     margin: 0 auto;
-    background-color: grey; // This is a pretty good indicator that the CSS isn't updating
+    background-color: white;
 
     .headline{
         padding-top: 50px;
@@ -13,7 +13,7 @@
         width: 980px;
         height: 110px;
         flex-direction: row;
-        background-color: aqua;
+        //background-color: aqua;
         display:block;
         
         .headlineborder{
@@ -25,7 +25,7 @@
     }
 
     .offers{
-        background-color: bisque;
+        background-color: white;
 
         .offer1{
             display: flex;
@@ -163,7 +163,7 @@
                     text-align: center;
                     //position:fixed;
                     //bottom: 0px;
-                    margin-top: 15px;
+                    margin-top: 28px;
                 }
             }
 
@@ -179,6 +179,57 @@
         }
 
         
+
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .specialoffers {
+        max-width:80%;
+        margin:0 auto;
+        //display:flex;
+        //flex-direction: column;
+        flex-wrap:wrap;
+
+        .headline{
+            align-items: center;
+            //text-align: center;
+            //flex-wrap:wrap;
+            min-width: 100%;
+        }
+
+        .offers{
+            //display: block;
+            flex-direction: column;
+            
+            //.offer1{
+                //.barcelonaimage {
+                   // display: block;
+                    //width:100%;
+                    //height: auto;
+                //}
+    
+                //.barcelonasection1{
+                //    display:block;
+                    //width:100%;
+                //}
+            //}
+
+            //.offer2{
+                //.bangkokimage{
+                    //display: block;
+                    //width:100%;
+                    //height:auto;
+                //}
+    
+                //.bangkoksection1{
+                //    display:block;
+                //    width:100%;
+                //}
+            //}
+           
+        }
+
+
 
     }
 }

@@ -1,52 +1,184 @@
 .specialoffers{
     font-family: Proxima;
     width: 980px;
-    height: 700px;
+    height: 755px;
     margin: auto;
-    display: flex;
+    display: block;
     margin: 0 auto;
-    background-color: red; // This is a pretty good indicator that the CSS isn't updating
-
-
+    background-color: grey; // This is a pretty good indicator that the CSS isn't updating
 
     .headline{
-        padding-left: 0px;
-        font-size: 60px;
+        padding-top: 50px;
+        font-size: 35px;
+        width: 980px;
+        height: 110px;
+        flex-direction: row;
+        background-color: aqua;
+        display:block;
+        
+        .headlineborder{
+            width:222px;
+            height: 10px;
+            border-bottom: 3px solid black;
+        }
+
     }
 
     .offers{
-
+        background-color: bisque;
 
         .offer1{
+            display: flex;
             flex-direction: row;
+            width: 980px;
+            height: 350 px;
+            padding-top: 35px;
+            padding-bottom: 10px;
 
             .barcelonaimage{
-                background-image: $overlay, url(../images/special-offer-01.jpg);
+                width: 199px;
+                height:287px;
+                background-image: url(../images/special-offer-01.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                //border-top: 3px black;
+                padding-top: 20px;
             }
-            .barcelonasection{
+            .barcelonasection1{
                 font-size: 12px;
-                padding-left: 10px;
+                padding-left: 20px;
+                width: 381px;
+                display:flex;
+                flex-direction: column;
+                height:287px;
+
+                .barcelonaheadline {
+                    font-size: 35px;
+                    //width:500px;
+                    height: 45px;
+                    flex-direction: row;
+
+            
+                }
+
+                .barcelonaborder{
+                    width: 205px;
+                    height:10px;
+                    border-top: 3px solid black;
+                    flex-direction: row;
+                }
+
+                .lorem {
+                    height: 182px;
+                    display: block;
+                    flex-direction: column;
+                    padding-top: 30px;
+                    padding-right: 75px;
+                    padding-bottom: 90px;
+                    font-size: 17px;
+                }
+
+                .learn-more {
+                    background-color: $site-blue;
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    width: 135px;
+                    color: white;
+                    text-align: center;
+                    //position:fixed;
+                    //bottom: 0px;
+                    margin-top: 15px;
+                }
+            }
+
+            .barcelonasection2 {
+                width: 400px;
+                text-align: right;
+                padding-right: 10px;
+                font-size: 25px;
+                color:orangered;
             }
 
         }
 
         .offer2{
+            display: flex;
             flex-direction: row;
+            width: 980px;
+            height: 350 px;
+            padding-top: 35px;
+            padding-bottom: 10px;
 
             .bangkokimage{
-                background-image: $overlay, url(../images/special-offer-02.jpg);
+                width: 199px;
+                height:287px;
+                background-image: url(../images/special-offer-02.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                //border-top: 3px black;
+                padding-top: 20px;
             }
-            .bangkoksection{
+            .bangkoksection1{
                 font-size: 12px;
-                padding-left: 10px;
-            }            
+                padding-left: 20px;
+                width: 381px;
+                display:flex;
+                flex-direction: column;
+                height:287px;
+
+                .bangkokheadline {
+                    font-size: 35px;
+                    //width:500px;
+                    height: 45px;
+                    flex-direction: row;
+
+            
+                }
+
+                .bangkokborder{
+                    width: 205px;
+                    height:10px;
+                    border-top: 3px solid black;
+                    flex-direction: row;
+                }
+
+                .lorem {
+                    height: 182px;
+                    display: block;
+                    flex-direction: column;
+                    padding-top: 30px;
+                    padding-right: 75px;
+                    padding-bottom: 90px;
+                    font-size: 17px;
+                }
+
+                .learn-more {
+                    background-color: $site-blue;
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    width: 135px;
+                    color: white;
+                    text-align: center;
+                    //position:fixed;
+                    //bottom: 0px;
+                    margin-top: 15px;
+                }
+            }
+
+            .bangkoksection2 {
+                width: 400px;
+                text-align: right;
+                padding-right: 10px;
+                font-size: 25px;
+                color:orangered;
+                flex-direction: column;
+            }
+
         }
+
+        
 
     }
 }

@@ -29,9 +29,9 @@ p {
 }
 .nav {
   width: 980px;
-  height: 60px;
+  height: 80px;
   border-bottom: black solid 3px;
-  margin: 20px auto 0 auto;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-between;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -39,6 +39,7 @@ p {
 .nav .logo {
   width: 92px;
   height: 42px;
+  vertical-align: middle;
   align-self: center;
 }
 .nav .links {
@@ -102,7 +103,7 @@ p {
   }
 }
 footer {
-  max-width: 1280px;
+  max-width: 100%;
   height: 100px;
   background-color: #79ADDC;
   background-size: cover;
@@ -710,5 +711,151 @@ p {
   }
   .specialoffers .offers {
     flex-direction: column;
+  }
+}
+.blog {
+  font-family: Gill Sans;
+  display: block;
+  max-width: 980px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: orchid;
+}
+.blog .blogheadline {
+  flex-direction: row;
+  padding-top: 50px;
+  font-size: 30px;
+  height: 110px;
+  background-color: orange;
+  background-size: cover;
+  width: 980px;
+}
+.blog .blogheadline .blogheadlineborder {
+  width: 106px;
+  height: 10px;
+  border-bottom: 3px solid black;
+}
+.blog .date1 {
+  flex-wrap: wrap;
+  width: 80px;
+  height: 259px;
+  background-color: blue;
+  float: left;
+  flex-direction: column;
+}
+.blog .date1 .datebox {
+  background-color: #79ADDC;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  color: white;
+  font-family: Gill Sans;
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 22px;
+}
+.blog .date1 .datebox .date {
+  font-size: 22px;
+}
+.blog .date1 .datebox .month1 {
+  font-size: 12px;
+}
+.blog .blogsection1image {
+  flex-wrap: wrap;
+  margin-left: 80px;
+  width: 900px;
+  height: 259px;
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+.blog .blogsection1 {
+  flex-direction: column;
+  height: 136px;
+  width: 980px;
+  background-color: yellow;
+}
+.blog .blogsection1 .span1 {
+  padding: 25px 80px 0px 80px;
+  font-size: 15px;
+  color: black;
+}
+.blog .blogsection1 .span2 {
+  padding: 15px 80px;
+  color: #79ADDC;
+  font-size: 13px;
+  width: 460px;
+}
+.blog .nothingness {
+  height: 100px;
+  width: 980px;
+  background-color: palegreen;
+}
+.blog .date2 {
+  flex-wrap: wrap;
+  width: 80px;
+  height: 259px;
+  background-color: blue;
+  float: left;
+  flex-direction: column;
+}
+.blog .date2 .datebox {
+  background-color: #79ADDC;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  color: white;
+  font-family: Gill Sans;
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 22px;
+}
+.blog .date2 .datebox .date {
+  font-size: 22px;
+}
+.blog .date2 .datebox .month1 {
+  font-size: 12px;
+}
+.blog .blogsection2image {
+  flex-wrap: wrap;
+  margin-left: 80px;
+  width: 900px;
+  height: 259px;
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+.blog .blogsection2 {
+  flex-direction: column;
+  height: 136px;
+  width: 980px;
+  background-color: yellow;
+}
+.blog .blogsection2 .span3 {
+  padding: 25px 80px 0px 80px;
+  font-size: 15px;
+  color: black;
+}
+.blog .blogsection2 .span4 {
+  padding: 15px 80px;
+  color: #79ADDC;
+  font-size: 13px;
+  width: 460px;
+}
+
+@media only screen and (max-width: 795px) {
+  .blog {
+    max-width: 80%;
+  }
+  .blog .blogheadline {
+    max-width: 80%;
   }
 }

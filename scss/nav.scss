@@ -1,9 +1,9 @@
 .nav {
     width: 980px;
-    height: 60px;
+    height: 80px;
     border-bottom: black solid 3px;
     //background-color: red;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-between;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -12,6 +12,7 @@
         //background-color: red;
         width: 92px;
         height: 42px;
+        vertical-align: middle;
         align-self: center;
     }
     .links {

@@ -6,7 +6,7 @@
     display: flex;
     margin: 0 auto;
     background-color: black; // This is a pretty good indicator that the CSS isn't updating
-
+    position: relative;
 
 
     .headline{
@@ -29,9 +29,19 @@
                 background-size: cover;
                 background-position: center;
             }
-            .barcelonasection{
+            .barcelonasection1{
                 font-size: 12px;
                 padding-left: 10px;
+            }
+
+            .barcelonasection2 {
+
+               .barcelonasale{
+                   position:fixed;
+                   padding-left: 10px;
+                   padding-top: 3px;
+               } 
+
             }
 
         }
@@ -45,11 +55,79 @@
                 background-size: cover;
                 background-position: center;
             }
-            .bangkoksection{
+            .bangkoksection1{
                 font-size: 12px;
                 padding-left: 10px;
-            }            
+            }        
+            .bangkoksection2{
+
+                .bangkoksale{
+                    position: fixed;
+                    padding-left: 10px;
+                    padding-top: 3px;
+                }
+                
+            }    
         }
 
     }
+}
+
+@media only screen and (max-width: 795px) {
+    .specialoffers{
+
+
+
+        .headline {
+            margin-left: 30%;
+            align-self: center;
+        }
+
+        .offers {
+            //display: block;
+
+            .offer1 {
+                flex-direction: column;
+
+                .barcelonaimage{
+                    width:100%;
+                    flex-direction: column;
+                }
+
+                .barcelonasection1 {
+                    width: 100%;
+                }
+
+                .barcelonasection2 {
+                    flex-wrap: wrap;
+                }
+            }
+
+            .offer2 {
+                flex-direction: column;
+
+                .bangkokimage {
+
+                }
+
+                .bangkoksection1 {
+
+                }
+
+                .bangkoksection2 {
+
+                }
+
+            }
+
+
+        }
+
+
+
+    }
+
+
+
+
 }

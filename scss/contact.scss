@@ -5,6 +5,7 @@
     height: 890px;
     margin: 0 auto;
     //background-color: orchid;
+    position:relative;
 
     .headline{
         display: block;
@@ -110,7 +111,10 @@
 
 @media only screen and (max-width: 795px) {
     .contact {
+        //display: block;
         margin: 0 auto;
+        height: 1590px;
+        //height: 1500px;
     
         .headline{
             margin-left: 30%;
@@ -145,6 +149,7 @@
                 margin-top: 220px;
                 margin-left: 0px;
                 width: 100%;
+                margin-bottom: 100px;
 
                 .sendmessage{
                 margin-left: auto;

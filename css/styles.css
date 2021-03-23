@@ -865,14 +865,12 @@ p {
   width: 980px;
   height: 890px;
   margin: 0 auto;
-  background-color: orchid;
 }
 .contact .headline {
   display: block;
   padding-top: 50px;
   font-size: 30px;
   height: 150px;
-  background-color: orange;
   background-size: cover;
   width: 980px;
 }
@@ -880,6 +878,9 @@ p {
   width: 159px;
   height: 10px;
   border-bottom: 3px solid black;
+}
+.contact .contactsection {
+  display: flex;
 }
 .contact .contactsection .contactcolumn1 {
   width: 400px;
@@ -900,7 +901,47 @@ p {
   padding-top: 40px;
 }
 .contact .contactsection .contactcolumn2 {
+  flex-direction: column;
   width: 552px;
-  background-color: paleturquoise;
+  background-color: white;
   height: 442px;
+  margin-left: 50px;
+  font-size: 16px;
+}
+.contact .contactsection .contactcolumn2 .yourname {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 21px;
+}
+.contact .contactsection .contactcolumn2 .email {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 21px;
+}
+.contact .contactsection .contactcolumn2 .company {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 21px;
+}
+.contact .contactsection .contactcolumn2 .message {
+  height: 199px;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+.contact .contactsection .contactcolumn2 .sendmessage {
+  margin-top: 22px;
+  padding-top: 21px;
+  width: 167px;
+  height: 60px;
+  background-color: #79ADDC;
+  color: white;
+  text-align: center;
 }

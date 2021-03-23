@@ -26,11 +26,9 @@
 
     .contactsection {
         display: flex;
-        //make flex-wrap or block the lower ones to make responsive
 
         .contactcolumn1 { 
-            //flex-wrap: wrap; TRY DISPLAY BLOCK FOR RESPONSIVE
-            //margin-left: 80px;
+
             width: 400px;
             height: 442px;
             background-image: url(../images/map.jpg);
@@ -108,7 +106,55 @@
 
     }
 
+}
 
+@media only screen and (max-width: 795px) {
+    .contact {
+        margin: 0 auto;
+    
+        .headline{
+            margin-left: 30%;
+            align-self: center;
+            //position: fixed;
+            //width: 795px;
+            //align-items: center;
+            //justify-content: center;
+            //justify-items: center;
+        }
+    
+        .contactsection{
+            width: 80%;
+            align-items: center;
+            //margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
 
+            .contactcolumn1 {
+                display: block;
+                width: 100%;
+                //height: auto;
+
+                .contactaddress {
+                    text-align: center;
+                }
+            }
+    
+            .contactcolumn2 {
+                display: block;
+                margin-top: 220px;
+                margin-left: 0px;
+                width: 100%;
+
+                .sendmessage{
+                margin-left: auto;
+                margin-right: auto;
+                }
+
+            }
+    
+        }
+
+    }
 
 }

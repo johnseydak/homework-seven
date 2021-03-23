@@ -113,6 +113,7 @@ footer {
   padding: 0px 120px;
   margin-top: 130px;
   margin-bottom: 0px;
+  position: relative;
 }
 footer .logo {
   width: 92px;
@@ -134,7 +135,9 @@ footer .socialmedia {
 
 @media only screen and (max-width: 1060px) {
   footer {
-    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 100px;
     background-color: #79ADDC;
     background-size: cover;
@@ -944,4 +947,38 @@ p {
   background-color: #79ADDC;
   color: white;
   text-align: center;
+}
+
+@media only screen and (max-width: 795px) {
+  .contact {
+    margin: 0 auto;
+  }
+  .contact .headline {
+    margin-left: 30%;
+    align-self: center;
+  }
+  .contact .contactsection {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .contact .contactsection .contactcolumn1 {
+    display: block;
+    width: 100%;
+  }
+  .contact .contactsection .contactcolumn1 .contactaddress {
+    text-align: center;
+  }
+  .contact .contactsection .contactcolumn2 {
+    display: block;
+    margin-top: 220px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .contact .contactsection .contactcolumn2 .sendmessage {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
